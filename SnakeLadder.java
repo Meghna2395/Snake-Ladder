@@ -16,18 +16,20 @@ public static void main(String args[]){
 			c++;
 			if (a>100) 
 				a -= b;
+                	System.out.println(a);
 			break;
 		case 2:
                 	
-			if (a >=b){
+			if (a >= b){
 			a -= b;
 			}else {
 			a = 0;
 			}
+                	System.out.println(a);
 			c++;
 			break;
 		default:
-			
+			System.out.println("playing not allowed");
 			c++;
 		}
 		}
@@ -35,3 +37,4 @@ public static void main(String args[]){
                 System.out.println(c);
 	}
 }
+		
