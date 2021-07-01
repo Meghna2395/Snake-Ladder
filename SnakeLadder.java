@@ -5,17 +5,21 @@ public static void main(String args[]){
       int c = 0;
       int b;
 			
-		while(a<=100){
+		
+		while(a<100){
 		int run =(int) Math.floor(Math.random()*10)%3;
+                b = (int) Math.floor(Math.random()*10)%6;
 		switch(run){
 		case 1:
-                	b = (int) Math.floor(Math.random()*10)%6;
+                	
 			a += b;
-		        c++;
+			c++;
+			if (a>100) 
+				a -= b;
 			break;
 		case 2:
-                	b = (int) Math.floor(Math.random()*10)%6;
-			if (a >= b){
+                	
+			if (a >=b){
 			a -= b;
 			}else {
 			a = 0;
@@ -23,12 +27,11 @@ public static void main(String args[]){
 			c++;
 			break;
 		default:
-			System.out.println("playing not allowed");
+			
 			c++;
-		}}
+		}
+		}
 		System.out.println(a);
                 System.out.println(c);
 	}
 }
-		
-
