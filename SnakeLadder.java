@@ -4,13 +4,14 @@ public static void main(String args[]){
       int a = 0;
       int c = 0;
       int b;
-		
+			
+		while(a<=100){
 		int run =(int) Math.floor(Math.random()*10)%3;
 		switch(run){
 		case 1:
                 	b = (int) Math.floor(Math.random()*10)%6;
 			a += b;
-			b++;
+		        c++;
 			break;
 		case 2:
                 	b = (int) Math.floor(Math.random()*10)%6;
@@ -22,10 +23,12 @@ public static void main(String args[]){
 			c++;
 			break;
 		default:
-			System.out.println("playing not allowed ");
-	        	c++;
-		}
+			System.out.println("playing not allowed");
+			c++;
+		}}
 		System.out.println(a);
                 System.out.println(c);
 	}
 }
+		
+
